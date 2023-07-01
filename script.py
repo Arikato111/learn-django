@@ -1,9 +1,12 @@
 import sys
 import os
 
+defaltManage = "python3 manage.py"
 scripts = {
-    "dev": "python3 manage.py runserver",
-    "make": "python3 manage.py makemigrations"
+    "dev": f"{defaltManage} runserver",
+    "db-make": f"{defaltManage} makemigrations",
+    "db-up": f"{defaltManage} migrate",
+    "admin": f"{defaltManage} createsuperuser"
 }
 
 if sys.argv[1] in scripts.keys():
