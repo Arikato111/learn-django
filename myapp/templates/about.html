@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about me</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        my name is
+        <h1>
+          <b> ~<i>{{ name }}</i>~ </b>
+        </h1>
+        {% if age >= 30 %}
+        <h3>คุณเป็นวัยผู้ใหญ่</h3>
+        {% else %}
+        <h3>คุณเป็นวัยรุ่น</h3>
+        {% endif %}
+        <div>อายุ {{ age }}</div>
+      </div>
+    </main>
+  </body>
+</html>
