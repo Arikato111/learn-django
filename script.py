@@ -2,7 +2,8 @@ import sys
 import os
 
 scripts = {
-    "dev": "python3 manage.py runserver"
+    "dev": "python3 manage.py runserver",
+    "make": "python3 manage.py makemigrations"
 }
 
 if sys.argv[1] in scripts.keys():
