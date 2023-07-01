@@ -1,4 +1,9 @@
-# Learn Django
+<p align="center">
+    <img height="30" width="40" src="https://github.com/tandpfun/skill-icons/raw/main/icons/Django.svg" alt="django">
+    <img height="30" width="40" src="https://github.com/Arikato111/Arikato111/raw/main/icons/python-original.svg" alt="Python">
+</p>
+
+# <p align="center">Learn Django</p>
 
 just try to learn Django
 
