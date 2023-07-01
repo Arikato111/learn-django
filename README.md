@@ -2,6 +2,8 @@
 
 just try to learn Django
 
+I study from [Django Framework | KongRuksiam](https://youtu.be/XLMLveR2BYo)
+
 ## Get started
 
 * if using windows change `python3` in **script.py** to `python`
