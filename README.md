@@ -13,14 +13,13 @@ I study from [Django Framework | KongRuksiam](https://youtu.be/XLMLveR2BYo)
 
 * if using windows change `python3` in **script.py** to `python`
 
-- run command to run server
+- run command bellow to run server
 
 ```bash
-# run server
 python3 script.py dev
 ```
 
-- or use default Django's command.
+- or run default Django's command.
 
 ```bash
 python3 manage.py runserver
