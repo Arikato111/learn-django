@@ -1,9 +1,31 @@
-{% extends "base.html" %}
-
-{% block title %}
-    <title>หน้าแรกของเว็บไซต์</title>
-{% endblock %}
-
-{% block content %}
-<h1>Hello World</h1>
+{% extends "base.html" %} {% block title %}
+<title>หน้าแรกของเว็บไซต์</title>
+{% endblock %} {% block content %}
+<main>
+  {% if messages %} {% for msg in messages %}
+  <div class="alert alert-success text-center">{{ msg }}</div>
+  {% endfor %} {% endif %}
+  <table class="table table-striped">
+    <thead>
+      <th>รหัส</th>
+      <th>name</th>
+      <th>age</th>
+      <th>วันที่เพิ่ม</th>
+      <th>แก้ไข</th>
+      <th>ลบ</th>
+    </thead>
+    <tbody>
+      {% for usr in users %}
+      <tr>
+        <td>{{ usr.id }}</td>
+        <td>{{ usr.name }}</td>
+        <td>{{ usr.age }}</td>
+        <td>{{ usr.date }}</td>
+        <td><a class="btn btn-warning" href="/edit/{{ usr.id }}">แก้ไข</a></td>
+        <td><a class="btn btn-danger" href="#">ลบ</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</main>
 {% endblock %}
