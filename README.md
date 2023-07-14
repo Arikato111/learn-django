@@ -27,9 +27,5 @@ python3 manage.py runserver
 
 ## Need to know 
 
-- I have no idea why I must use Django. 
-- I try to learn for answer the question that Why I should use it?
-- Why not expressjs, nextjs  but Django? Why~?
-- I think it be like Laravel but simple than it.
-- and of course I don't want to use Laravel '~'
-- However, I have more happiness with React, Nextjs or TypeScript, but I still learning it.
+- I have created script.py for run  more short command. You will found more command at `scripts` in `script.py`
+- This project is for learn django and I think I might not have django project for real use case.
