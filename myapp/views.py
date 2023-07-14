@@ -39,3 +39,13 @@ def edit(request, person_id):
 
     person = Person.objects.get(id=person_id)
     return render(request, 'edit.html', {"person": person})
+
+
+def delete(request, person_id):
+    person = Person.objects.get(id=person_id)
+    person.delete()
+    messages.success(request, "อัพเดทข้อมูลเรียบร้อย")
+    return redirect('/')
+
+
+    

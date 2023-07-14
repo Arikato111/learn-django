@@ -22,7 +22,7 @@
         <td>{{ usr.age }}</td>
         <td>{{ usr.date }}</td>
         <td><a class="btn btn-warning" href="/edit/{{ usr.id }}">แก้ไข</a></td>
-        <td><a class="btn btn-danger" href="#">ลบ</a></td>
+        <td><a onclick="return confirm('คุณต้องการลบ {{ usr.name }} หรือไม่?')" class="btn btn-danger" href="/delete/{{ usr.id }}">ลบ</a></td>
       </tr>
       {% endfor %}
     </tbody>
